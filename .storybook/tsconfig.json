@@ -1,0 +1,17 @@
+{
+  "extends": "../projects/afui-angular/tsconfig.lib.json",
+  "compilerOptions": {
+    "types": ["node"],
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "afui-angular": ["projects/afui-angular/src/public-api"]
+    },
+  },
+  "exclude": [
+    "../src/test.ts",
+    "../src/**/*.spec.ts",
+    "../projects/**/*.spec.ts"
+  ],
+  "include": ["../stories/**/*", "../src/**/*", "../projects/**/*"],
+  "files": ["./typings.d.ts"]
+}
